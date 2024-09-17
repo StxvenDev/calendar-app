@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "tw" : "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "tw": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "react": "^18.3.1",
+    "react-big-calendar": "^1.14.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "6"
   },
