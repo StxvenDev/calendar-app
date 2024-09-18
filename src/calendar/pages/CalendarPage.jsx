@@ -1,7 +1,7 @@
 import {Calendar} from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import { addHours } from 'date-fns'
-import { Navbar } from '../components/Navbar'
+import { Navbar, CalendarEvent } from '../'
 import { getMessagesES, localizer } from '../../helpers'
 
 
@@ -14,7 +14,7 @@ export const CalendarPage = () => {
       bgColor: '#fafafa',
       user: {
           _id: '123',
-          name: 'fernando'
+          name: 'Steven'
       }
     }];
 
@@ -42,6 +42,9 @@ export const CalendarPage = () => {
             style={{ height: 'calc(100vh - 64px)' }}
             messages={getMessagesES()}
             eventPropGetter={ eventStyleGetter }
+            components={{
+                event: CalendarEvent
+            }}
         />
     </>
   )
